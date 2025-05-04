@@ -24,3 +24,216 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.h1,h1 {
+  margin-top: -6vw;
+  font-family: obviously-condensed,sans-serif;
+  font-size: 24vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1
+}
+
+@media (min-width: 768px) {
+  .h1,h1 {
+      margin-top:-4rem
+  }
+}
+
+@media (min-width: 1280px) {
+  .h1,h1 {
+      margin-top:-5vw
+  }
+}
+
+.h2,h2 {
+  font-family: obviously-condensed,sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1
+}
+
+@media (min-width: 1024px) {
+  .h2,h2 {
+      font-size:15rem
+  }
+}
+
+.h3,h3 {
+  margin-top: -.75rem;
+  font-family: obviously-condensed,sans-serif;
+  font-size: 3.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1
+}
+
+@media (min-width: 768px) {
+  .h3,h3 {
+      margin-top:-2rem;
+      font-size: 9rem
+  }
+}
+
+@media (min-width: 1280px) {
+  .h3,h3 {
+      font-size:10rem
+  }
+}
+
+@media (min-width: 1920px) {
+  .h3,h3 {
+      font-size:13rem
+  }
+}
+
+.h4,h4 {
+  font-family: obviously-narrow,sans-serif;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1
+}
+
+@media (min-width: 768px) {
+  .h4,h4 {
+      font-size:4.5rem;
+      line-height: 1
+  }
+}
+
+@media (min-width: 1920px) {
+  .h4,h4 {
+      font-size:6rem;
+      line-height: 1
+  }
+}
+
+.h5,h5 {
+  font-family: obviously-wide,sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1
+}
+
+@media (min-width: 768px) {
+  .h5,h5 {
+      font-size:2.25rem;
+      line-height: 2.5rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .h5,h5 {
+      font-size:3.5rem
+  }
+}
+
+.h6,h6 {
+  font-family: obviously,sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1
+}
+
+@media (min-width: 768px) {
+  .h6,h6 {
+      font-size:2.5rem
+  }
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1.25
+}
+
+@media (min-width: 768px) {
+  p {
+      font-size:1.5rem;
+      line-height: 2rem
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+      font-size:1.875rem;
+      line-height: 2.25rem
+  }
+}
+
+.nox {
+  padding-left: 0!important;
+  padding-right: 0!important
+}
+
+.noy {
+  padding-top: 0!important;
+  padding-bottom: 0!important
+}
+
+.rounded-img {
+  border-radius: 1.25rem
+}
+
+.px-global,section {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+@media (min-width: 768px) {
+  .px-global,section {
+      padding-left:2rem;
+      padding-right: 2rem
+  }
+}
+
+.py-global {
+  padding-top: 5rem
+}
+
+@media (min-width: 768px) {
+  .py-global {
+      padding-top:8rem
+  }
+}
+
+.py-global {
+  padding-bottom: 4rem
+}
+
+@media (min-width: 768px) {
+  .py-global {
+      padding-bottom:8rem
+  }
+}
+
+.flex-global {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem
+}
+
+@media (min-width: 768px) {
+  .flex-global {
+      gap:8rem
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-global {
+      gap:10rem
+  }
+}
+
+@media (min-width: 1280px) {
+  .flex-global {
+      gap:15rem
+  }
+}
