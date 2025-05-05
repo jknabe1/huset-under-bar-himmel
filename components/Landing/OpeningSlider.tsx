@@ -15,15 +15,15 @@ export default function SwiperCarousel() {
   // Sample images - replace with your actual images
   const images = [
     {
-      src: "https://www.eatcabalar.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fa2bflsso%2Fproduction%2Ff4191278ba6980daf092a788a3e74d52217beedb-6772x4515.jpg%3Ffit%3Dmax%26auto%3Dformat&w=1080&q=75",
+      src: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/485085867_954691720212778_5463680591443656414_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=nzqYAwm2oUIQ7kNvwESS_dJ&_nc_oc=AdnRpRPx8E0MID8tPveP7VDPoFEr1Z8PcZ-wPhAe8tWpTH8-CukK-yoz3QGajPQy8N4&_nc_zt=23&_nc_ht=scontent-arn2-1.xx&_nc_gid=igzO4usAe2YlMqEdmU_Mag&oh=00_AfGkk055V50Xqo3bzbTS15iTcbXkhqevctC-PDNreuwF7w&oe=681DEE7C",
       alt: "Children on playground stairs",
     },
     {
-      src: "https://www.eatcabalar.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fa2bflsso%2Fproduction%2Fd0ed988dd05e0d1dc7be89f2b3479c14cc43cbfc-5504x8256.jpg%3Ffit%3Dmax%26auto%3Dformat&w=1080&q=75",
+      src: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/466971569_18028568105598302_6219511449949460606_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=1aGP6l-kZrUQ7kNvwEjABy3&_nc_oc=Adl-tNTlXoxj09BAWOhdaqwZr6omHhJBDrA-lO4TFq28T7I64SZlIQRbF8V88HKew3E&_nc_zt=23&_nc_ht=scontent-arn2-1.xx&_nc_gid=7yQ2J7a68DS0suQGrq7atQ&oh=00_AfESkVoaHAOuTmp60Zsm3lTx5fk5eGsuRWX69aOP2mteMQ&oe=681DD563",
       alt: "Crowded venue with people",
     },
     {
-      src: "https://www.eatcabalar.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fa2bflsso%2Fproduction%2Fb386e5b67da439729e34786210d721b14c2fb948-2880x1919.jpg%3Ffit%3Dmax%26auto%3Dformat&w=1080&q=75",
+      src: "https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/467321579_18028568381598302_7397446107310404386_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cN93V91jq8cQ7kNvwHHHxfK&_nc_oc=Adm0qaaqMD6hxi7NSTFd4H7--ze-us-8l4D0arPYsJBTiwUfG5tyFC5vwAvTFUKUyNA&_nc_zt=23&_nc_ht=scontent-arn2-1.xx&_nc_gid=FXSnnek9LFbNpjET7InwnA&oh=00_AfEGmzbFciuKD62lo4YjYSbfEofMbyQbGjUpwEaq3gFgEQ&oe=681DD66A",
       alt: "People in food service area",
     },
     // Add more images as needed
@@ -64,8 +64,8 @@ export default function SwiperCarousel() {
                 <Image
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
-                  width={800}
-                  height={600}
+                  width={1080}
+                  height={1080}
                   className="object-cover max-h-[30rem] md:max-h-[40rem] w-full h-auto rounded-img"
                 />
               </div>
