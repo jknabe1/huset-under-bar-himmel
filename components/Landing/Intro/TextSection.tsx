@@ -9,15 +9,11 @@ const TextSection = () => {
             </div>
             <div className="col-span-1 text-4xl">
                 <p>Öppettider:</p>
-                <p>Thursday - Sunday: 11-9</p>
-                <p>Monday - Wednesday: Closed</p>
-                <p></p>
-                <p>CLOSED EASTER SUNDAY</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <div className="pt-8 -mb-24 -mr-10"></div></div></section>
+                <p>Mån - Fre: 11-18</p>
+                <p>Lör - Sön: 10-16</p>
+                <div className="pt-8 -mb-24 -mr-10"></div>
+            </div>
+          </section>
     </div>
   )
 }
