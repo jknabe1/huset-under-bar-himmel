@@ -11,7 +11,7 @@ export default function Intro() {
                 </h1>
                 <div className="relative mx-auto max-w-[95rem]"></div>
             </div>
-            <img alt="Chef preparing sandwiches and burgers." fetchPriority="high" width="1347" height="746" className="object-cover w-full rounded-img h-[70vh] md:h-[83vh]" src="https://www.eatcabalar.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fa2bflsso%2Fproduction%2F6ff7f47aac4eecd556ffd4991b4bec2e84d0efad-1347x746.jpg%3Frect%3D17%2C0%2C1298%2C746%26fit%3Dmax%26auto%3Dformat&amp;w=3840&amp;q=75"/>
+            <img alt="Chef preparing sandwiches and burgers." fetchPriority="high" width="1347" height="746" className="object-cover w-full rounded-img h-[70vh] md:h-[83vh]" src="https://www.visitorebro.se/wp-content/uploads/2020/08/Skyltar-i-Wadk%C3%B6ping-scaled-1170x660.jpg"/>
         </section>
     </div>
   )
