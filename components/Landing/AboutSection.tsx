@@ -13,8 +13,8 @@ const AboutSection = () => {
                     </div>
                     <div className="flex flex-col items-start self-center max-w-4xl gap-6 md:gap-8">
                         <div className="flex flex-col gap-4 balance md:gap-6">
-                            <h6>Allt börjar med en</h6>
-                            <h3 className="balance">Vision</h3>
+                            <p className='kicker'>Allt börjar med en</p>
+                            <h3 className="louder">Vision</h3>
                         </div>
                         <p>Här kan ni skriva något kort om er historia och osv osv, ni fattar - det vanliga "bla bla" etc.</p>
                         <a href="/about" className="border-darkgreen px-6 py-3 text-base uppercase transition-colors border-2 rounded-full md:py-4 md:text-xl font-neue  hover:bg-green hover:text-white hover:bg-black">Läs mer om Huset</a>

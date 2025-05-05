@@ -40,111 +40,70 @@ body {
   color: black;
 }
 
-.h1,h1 {
+.h1,h1,h2,h3,h4,h5,h6 {
   font-family:  'Huset-Bold';
   text-transform: uppercase;
     font-weight: 900;
     line-height: 1;
 }
 
-.h2,h2 {
-  font-family: 'Huset-Bold';
+
+/* Responsive typography */
+.kicker {
+  font-size: 1.75rem; /* Mobile base size */
+  font-family: "Huset-Bold";
+  text-transform: uppercase;
   font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1
+  line-height: 1;
+  letter-spacing: -0.01em;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-@media (min-width: 1024px) {
-  .h2,h2 {
-      font-size:15rem
+@media (min-width: 640px) {
+  .kicker {
+    font-size: 2rem; /* Tablet size */
   }
 }
 
-.h3,h3 {
-  font-family: 'Huset-Bold';
-  font-size: 3.75rem;
+@media (min-width: 768px) {
+  .kicker {
+    font-size: 2.5rem; /* Desktop size */
+  }
+}
+
+.louder {
+  font-size: 2.5rem; /* Mobile base size */
+  font-family: "Huset-Bold";
+  text-transform: uppercase;
   font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1
+  line-height: 1.1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .louder {
+    font-size: 3.5rem; /* Tablet size */
+    line-height: 1.15;
+  }
 }
 
 @media (min-width: 768px) {
-  .h3,h3 {
-      font-size: 9rem
-  }
-}
-
-@media (min-width: 1280px) {
-  .h3,h3 {
-      font-size:10rem
-  }
-}
-
-@media (min-width: 1920px) {
-  .h3,h3 {
-      font-size:8rem
-  }
-}
-
-.h4,h4 {
-  font-family: 'Huset-Bold';
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1
-}
-
-@media (min-width: 768px) {
-  .h4,h4 {
-      font-size:4.5rem;
-      line-height: 1
-  }
-}
-
-@media (min-width: 1920px) {
-  .h4,h4 {
-      font-size:6rem;
-      line-height: 1
-  }
-}
-
-.h5,h5 {
-  font-family: 'Huset-Bold';
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1
-}
-
-@media (min-width: 768px) {
-  .h5,h5 {
-      font-size:2.25rem;
-      line-height: 2.5rem
+  .louder {
+    font-size: 4.5rem; /* Medium desktop size */
+    line-height: 1.2;
   }
 }
 
 @media (min-width: 1024px) {
-  .h5,h5 {
-      font-size:3.5rem
+  .louder {
+    font-size: 5.5rem; /* Large desktop size */
+    line-height: 1.25;
   }
 }
 
-.h6,h6 {
-  font-family: 'Huset-Bold';
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1
-}
-
-@media (min-width: 768px) {
-  .h6,h6 {
-      font-size:2.5rem
-  }
-}
 
 p {
   font-size: 1.25rem;
@@ -246,3 +205,4 @@ a {
   background-repeat: repeat-x;
   background-position: 50%
 }
+

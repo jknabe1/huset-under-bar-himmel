@@ -13,11 +13,11 @@ export default function MenuSection() {
                     </div>
                     <div className="flex flex-col items-start self-center max-w-4xl gap-6 md:gap-8">
                         <div className="flex flex-col gap-4 balance md:gap-6">
-                            <h6>Are you drooling yet?</h6>
-                            <h3 className="balance">Check Out Our Menu</h3>
+                            <p className='kicker'>Visst är det läskande?</p>
+                            <h3 className="louder">Checka in menyn</h3>
                         </div>
-                        <p>The Cabalar menu is a delicious showcase of mouthwatering burgers, sandwiches, fries, and shakes, all made with the best ingredients. Indulge in our menu items that are designed to bring joy and satisfy your cravings.</p>
-                        <a href="/menu" className="border-darkgreen px-6 py-3 text-base uppercase transition-colors border-2 rounded-full md:py-4 md:text-xl font-neue  hover:bg-green hover:text-white hover:border-green border-white">Read Our Menu</a>
+                        <p>Husets meny består av rätter som ska påminna dig om allt det där från picknicken från barndomen, dejten med sås i hela ansiktet, eller pappas guldmacka när livet kändes lite för stort.  </p>
+                        <a href="/meny" className="border-darkgreen px-6 py-3 text-base uppercase transition-colors border-2 rounded-full md:py-4 md:text-xl hover:bg-black hover:text-white border-black">Kolla in menyn</a>
                     </div>
                 </div>
             </div>

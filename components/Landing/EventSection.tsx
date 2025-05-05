@@ -12,8 +12,8 @@ export default function EventSection() {
                         </div>
                         <div className="flex flex-col items-start self-center max-w-4xl gap-6 md:gap-8">
                             <div className="flex flex-col gap-4 balance md:gap-6">
-                                <h6>Vi levererar stämningen.</h6>
-                                <h3 className="balance">Ni skapar magin.</h3>
+                                <p className='kicker'>Vi levererar stämningen.</p>
+                                <h3 className="louder">Ni skapar magin.</h3>
                             </div>
                             <p>Hyr Husets exklusiva övervåning, en privat del av uteserveringen eller hela stället – skapa er egen oförglömliga upplevelse! </p>
                             <a href="/overvaningen" className="border-darkgreen px-6 py-3 text-base uppercase transition-colors border-2 rounded-full md:py-4 md:text-xl font-neue  hover:bg-green hover:text-white hover:bg-black">Övervåningen</a>

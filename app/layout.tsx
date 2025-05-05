@@ -17,11 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Header />
         <main className="relative z-10 bg-white">
-          <Header/>
           <div className="min-h-[55vh] py-global bg-white">
               {children}
           </div>
+        <SocialLink />
         </main>
         <Footer />
       </body>

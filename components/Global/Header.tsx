@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import HusetLogoWithoutText from "./huset-logo_without-text"
 import GridBackground from "./grid-background"
+import { HouseIcon, UpstairsIcon } from "./Icons"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -35,41 +36,77 @@ export default function Header() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 px-3 mt-2 transition-all duration-300 md:mt-0 md:py-4 md:px-5 ${
+        className={`fixed top-0 left-0 right-0 z-50 px-3 mt-2 transition-all duration-300 md:mt-0 md:py-4 md:px-5 px-global ${
           isHeaderVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col p-3 md:p-5 rounded-xl" style={{ backgroundColor: "" }}>
+        <div className="flex flex-col p-3 md:p-5 rounded-xl bg-white/80 backdrop-blur-sm">
           <div className="flex flex-row justify-between gap-4 items-center">
             <div className="flex flex-row justify-between w-full items-center">
-              <button
-                className="px-6 py-2 text-base uppercase transition-opacity border-2 rounded-full md:text-xl md:py-4 md:px-10 border-[--red] hover:opacity-50 focus-visible:border-none"
-                style={{
-                  translate: "none",
-                  rotate: "none",
-                  scale: "none",
-                  transform: "translate(0rem, 0rem)",
-                  color: "white",
-                  backgroundColor: "rgb(2, 90, 60)",
-                }}
+                <button
+                className="px-4 py-2 text-base uppercase transition-opacity border-2 rounded-full md:text-xl md:py-3 md:px-8 hover:opacity-50 text-white border-black cursor-pointer bg-black"
                 onClick={toggleMenu}
-              >
-                Utforska
-              </button>
-              <div className="flex justify-center">
-                <Link
-                  href="/"
-                  className="block transition-opacity shrink-0 hover:opacity-75"
-                  style={{ mixBlendMode: "difference", color: "rgb(2, 90, 60)" }}
                 >
-                  <HusetLogoWithoutText className="mix-blend-difference text-red" />
+                {isMenuOpen ? (
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  className="w-auto h-4 md:h-5"
+                  >
+                  <line
+                    x1="1"
+                    y1="1"
+                    x2="23"
+                    y2="23"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  <line
+                    x1="23"
+                    y1="1"
+                    x2="1"
+                    y2="23"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  />
+                  </svg>
+                ) : (
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="42"
+                  height="16"
+                  viewBox="0 0 85 33"
+                  className="w-auto h-4 md:h-5"
+                  >
+                  <g transform="translate(-0.379 -0.395)">
+                    <rect
+                    width="85"
+                    height="11"
+                    transform="translate(0.378 0.395)"
+                    fill="currentColor"
+                    />
+                    <rect
+                    width="85"
+                    height="11"
+                    transform="translate(0.378 22.395)"
+                    fill="currentColor"
+                    />
+                  </g>
+                  </svg>
+                )}
+                </button>
+              <div className="flex justify-center">
+                <Link href="/" className="block transition-opacity shrink-0 hover:opacity-75">
+                  <HusetLogoWithoutText width={250} height={80} color="#000000" />
                 </Link>
               </div>
               <a
-                href="https://www.toasttab.com/cabalar/v3/?mode=fulfillment"
+                href="#"
                 target="_blank"
                 rel="noreferrer"
-                className="items-center hidden px-10 py-4 text-xl text-center uppercase border-2 rounded-full lg:flex nav-button hover:text-white hover:bg-black"
+                className="items-center hidden px-6 py-3 text-base text-center uppercase border-2 rounded-full lg:flex nav-button hover:text-white hover:bg-black md:px-8 md:py-3 md:text-xl"
               >
                 Beställ
               </a>
@@ -80,6 +117,7 @@ export default function Header() {
             style={{
               marginTop: isMenuOpen ? "1rem" : "0rem",
               height: isMenuOpen ? "auto" : "0px",
+              transition: "height 0.3s ease-in-out, margin-top 0.3s ease-in-out",
             }}
           >
             <a
@@ -91,17 +129,15 @@ export default function Header() {
               <div className="absolute inset-0">
                 <GridBackground />
               </div>
-              
+
               {/* Content */}
-              <Image
-                alt=""
+              <HouseIcon
                 width={800}
                 height={800}
-                className="object-contain md:block hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative z-10"
-                sizes="20vw"
-                src="https://cdn.sanity.io/images/a2bflsso/production/d7fbfdeaede294582ef3b8d3b01ed40645d8ee3d-800x800.svg?fit=max&auto=format"
+                className="object-contain hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative z-10"
+                color="black"
               />
-              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl font-obviously-narrow lg:font-neue text-black relative z-10">
+              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl text-black relative z-10">
                 Huset
               </span>
             </a>
@@ -109,20 +145,20 @@ export default function Header() {
               href="/meny"
               target="_self"
               className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-darkgreen flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
-              >
-                {/* Grid Background */}
-                <div className="absolute inset-0">
-                  <GridBackground />
-                </div>
+            >
+              {/* Grid Background */}
+              <div className="absolute inset-0">
+                <GridBackground />
+              </div>
               <Image
                 alt=""
-                width={400}
-                height={400}
-                className="object-contain md:block hidden h-[10vw] md:h-[13vw] w-auto relative lg:w-full"
+                width={800}
+                height={800}
+                className="object-contain md:block hidden h-[10vw] md:h-[13vw] w-auto relative lg:w-full z-10"
                 sizes="20vw"
                 src="/media/static/bread-icon.png"
               />
-              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl font-obviously-narrow relative text-black">
+              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl relative text-black z-10">
                 Meny
               </span>
             </a>
@@ -135,15 +171,13 @@ export default function Header() {
               <div className="absolute inset-0">
                 <GridBackground />
               </div>
-              <Image
-                alt=""
-                width={208}
-                height={198}
-                className="object-contain md:block hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative"
-                sizes="20vw"
-                src="https://cdn.sanity.io/images/a2bflsso/production/175275c41cc5689d14441a5df4356b78e4a45871-208x198.svg?fit=max&auto=format"
+              <UpstairsIcon
+                width={800}
+                height={800}
+                className="object-contain hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative z-10"
+                color="black"
               />
-              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl font-obviously-narrow relative text-black">
+              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl font-obviously-narrow relative text-black z-10">
                 Övervåningen
               </span>
             </a>
@@ -161,11 +195,11 @@ export default function Header() {
                 alt=""
                 width={400}
                 height={400}
-                className="object-contain md:block hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative"
+                className="object-contain hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative z-10"
                 sizes="20vw"
                 src="https://cdn.sanity.io/images/a2bflsso/production/6fbb243916384c7b5e6a4105452ed24143d3827c-400x400.svg?fit=max&auto=format"
               />
-              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl relative text-black">
+              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl relative text-black z-10">
                 KONTAKT & INFO
               </span>
             </a>
@@ -183,20 +217,22 @@ export default function Header() {
                 alt=""
                 width={800}
                 height={800}
-                className="object-contain md:block hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative"
+                className="object-contain hidden h-[10vw] md:h-[13vw] w-auto lg:w-full relative z-10"
                 sizes="20vw"
                 src="https://cdn.sanity.io/images/a2bflsso/production/bdfb658c60a308ed20831915a195c7403ebe3ae7-800x800.svg?fit=max&auto=format"
               />
-              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl relative text-black">
+              <span className="mb-1 text-3xl text-center uppercase md:text-4xl lg:mb-0 lg:text-2xl relative text-black z-10">
                 EVENEMANG & BILJETTER
               </span>
             </a>
             <a
               href="#"
-              className="px-10 w-full md:col-span-2 py-4 text-3xl pb-5 flex justify-center items-center min-h-[10vw] text-center uppercase border-2 border-white rounded-[1rem] font-obviously-narrow lg:hidden nav-button"
+              target="_blank"
+              rel="noreferrer"
+              className="px-10 w-full md:col-span-2 py-4 text-3xl pb-5 flex justify-center items-center min-h-[10vw] text-center uppercase border-2 border-white rounded-[1rem] font-obviously-narrow lg:hidden nav-button hover:bg-black hover:text-white transition-colors"
               style={{
-                borderColor: "rgb(2, 90, 60)",
-                color: "rgb(2, 90, 60)",
+                borderColor: "black",
+                color: "black",
                 backgroundColor: "white",
               }}
             >

@@ -1,16 +1,21 @@
-import React from 'react'
-
 export default function SocialLink() {
   return (
     <div>
-        <section>
-            <div className="pb-40 md:mb-0">
-                <div className="flex flex-col items-center gap-6 mb-16 text-center">
-                    <div className="md:h6 text-2xl">Follow along for updates</div>
-                    <a className="transition h4 hover:text-green" target="_blank" href="http://instagram.com/husetunderbarhimmel">husetunderbarhimmel</a>
-                </div>
-            </div>
-        </section>
+      <section>
+        <div className="pb-20 md:pb-40">
+          <div className="flex flex-col items-center gap-4 md:gap-6 mb-8 md:mb-16 text-center px-4">
+            <div className="kicker">Följ vår resa</div>
+            <a
+              className="louder break-words hover:italic"
+              target="_blank"
+              href="http://instagram.com/husetunderbarhimmel"
+              rel="noreferrer"
+            >
+              husetunderbarhimmel
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
