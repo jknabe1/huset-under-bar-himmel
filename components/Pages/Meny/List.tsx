@@ -1,4 +1,3 @@
-import GridBackground from '@/components/Global/grid-background'
 import React from 'react'
 
 export default function List() {

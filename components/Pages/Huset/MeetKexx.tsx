@@ -10,7 +10,7 @@ export default function MeetKexx() {
                 </div>
                 <section className="flex flex-col items-center gap-8 section noy">
                     <h3 className="louder balance">Träffa Kexx</h3>
-                    <p className="">Här kan ni också skriva lite om er. Jag gissar på att sidan "Huset" är en slags "Om Oss" sida? Där ni kan skriva om Huset och om Er.</p>
+                    <p className="">Här kan ni också skriva lite om er. Jag gissar på att sidan &quot;Huset&quot; är en slags &quot;Om Oss&quot; sida? Där ni kan skriva om Huset och om Er.</p>
                 </section>
             </div>
         </section>
