@@ -36,46 +36,34 @@ export default function Header() {
   return (
     <div>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 px-3 mt-2 transition-all duration-300 md:mt-0 md:py-4 md:px-5 px-global ${
+        className={`fixed top-0 left-0 right-0 z-50 px-3 mt-2 transition md:mt-0 md:py-4 md:px-5 ${
           isHeaderVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <div className={`flex flex-col p-3 md:p-5 rounded-xl ${isMenuOpen ? "bg-white" : ""}`}>
-          <div className="flex flex-row justify-between gap-4 items-center">
+          <div className="flex flex-row justify-between gap-4 align-center">
             <div className="flex flex-row justify-between w-full items-center">
-              <button
-                className="px-4 py-2 text-base uppercase transition-opacity border-2 rounded-full md:text-xl md:py-3 md:px-8 hover:opacity-50 text-white border-black cursor-pointer bg-black"
-                onClick={toggleMenu}
-              >
-                {isMenuOpen ? (
-                  <p>
-                    <span className="text-2xl md:text-3xl">STÄNG</span>
-                  </p>
-                ) : (
-                  <p>
-                    <span className="text-2xl md:text-3xl">ÖPPNA</span>
-                  </p>
-                )}
-              </button>
-              <div className="flex justify-center">
-                <Link href="/" className="block transition-opacity shrink-0 hover:opacity-75">
+                <Link href="/" className="block w-48 transition-opacity lg:w-60 shrink-0 hover:opacity-75">
                   <HusetLogoWithoutText width={250} height={80} color="#000000" />
                 </Link>
-              </div>
-              <button>
-                <p>
-                  <span className="text-2xl md:text-3xl">
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="items-center hidden px-6 py-3 text-center uppercase border-2 rounded-full lg:flex nav-button hover:text-white hover:bg-black md:px-8 md:py-3 text-2xl md:text-3xl"
-                    >
-                      Beställ
-                    </a>
-                  </span>
-                </p>
-              </button>
+                <div className="flex flex-row gap-4">
+                  <div className="flex flex-row gap-4">
+                    <button 
+                    onClick={toggleMenu}
+                    className="px-6 py-2 text-base uppercase transition-opacity border-2 rounded-full md:text-xl md:py-4 md:px-10 font-neue border-darkgreen hover:opacity-50 focus-visible:border-none">
+                      {isMenuOpen ? (
+                          <p>
+                            -
+                          </p>
+                        ) : (
+                          <p>
+                            +
+                          </p>
+                        )}
+                    </button>
+                    <a href="#" target="_blank" className="items-center hidden px-10 py-4 text-xl text-center uppercase border-2 rounded-full lg:flex nav-button font-neue border-[#ff0000]">Beställ online</a>
+                  </div>
+                </div> 
             </div>
           </div>
           <div
