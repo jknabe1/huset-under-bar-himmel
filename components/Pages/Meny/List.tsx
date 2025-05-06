@@ -19,9 +19,9 @@ export default function List() {
                     <div className="space-y-3">
                       <div className="space-y-1">
                         <div className="flex justify-between">
-                          <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
+                          <p className="text-2xl uppercase lg:text-3xl">Avocado</p>
                           <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">120</p>
+                          <p className="text-2xl lg:text-3xl">45</p>
                         </div>
                       </div>
                     </div>
@@ -30,9 +30,9 @@ export default function List() {
                     <div className="space-y-3">
                       <div className="space-y-1">
                         <div className="flex justify-between">
-                          <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
+                          <p className="text-2xl uppercase lg:text-3xl">Köttbulle</p>
                           <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">120</p>
+                          <p className="text-2xl lg:text-3xl">45</p>
                         </div>
                       </div>
                     </div>
@@ -41,9 +41,9 @@ export default function List() {
                     <div className="space-y-3">
                       <div className="space-y-1">
                         <div className="flex justify-between">
-                        <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
+                        <p className="text-2xl uppercase lg:text-3xl">Fried Chicken</p>
                           <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">120</p>
+                          <p className="text-2xl lg:text-3xl">89</p>
                         </div>
                       </div>
                       <div className="text-xl capitalize"></div>
@@ -53,9 +53,9 @@ export default function List() {
                     <div className="space-y-3">
                       <div className="space-y-1">
                         <div className="flex justify-between">
-                        <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
+                        <p className="text-2xl uppercase lg:text-3xl">BLT</p>
                           <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">120</p>
+                          <p className="text-2xl lg:text-3xl">68</p>
                         </div>
                       </div>
                     </div>
@@ -71,9 +71,9 @@ export default function List() {
                     <div className="space-y-3">
                       <div className="space-y-1">
                         <div className="flex justify-between">
-                        <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
+                        <p className="text-2xl uppercase lg:text-3xl">Stor Stark</p>
                           <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">25</p>
+                          <p className="text-2xl lg:text-3xl">55</p>
                         </div>
                       </div>
                       <div className="text-xl capitalize"></div>
@@ -83,33 +83,33 @@ export default function List() {
                     <div className="space-y-3">
                       <div className="space-y-1">
                         <div className="flex justify-between">
-                        <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
+                        <p className="text-2xl uppercase lg:text-3xl">Glas vitt</p>
+                          <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
+                          <p className="text-2xl lg:text-3xl">85</p>
+                        </div>
+                      </div>
+                      <div className="text-xl capitalize"></div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col w-full gap-12 p-4">
+                    <div className="space-y-3">
+                      <div className="space-y-1">
+                        <div className="flex justify-between">
+                        <p className="text-2xl uppercase lg:text-3xl">Glas rött</p>
+                          <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
+                          <p className="text-2xl lg:text-3xl">85</p>
+                        </div>
+                      </div>
+                      <div className="text-xl capitalize"></div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col w-full gap-12 p-4">
+                    <div className="space-y-3">
+                      <div className="space-y-1">
+                        <div className="flex justify-between">
+                        <p className="text-2xl uppercase lg:text-3xl">Alkohol fritt</p>
                           <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
                           <p className="text-2xl lg:text-3xl">30</p>
-                        </div>
-                      </div>
-                      <div className="text-xl capitalize"></div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col w-full gap-12 p-4">
-                    <div className="space-y-3">
-                      <div className="space-y-1">
-                        <div className="flex justify-between">
-                        <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
-                          <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">45</p>
-                        </div>
-                      </div>
-                      <div className="text-xl capitalize"></div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col w-full gap-12 p-4">
-                    <div className="space-y-3">
-                      <div className="space-y-1">
-                        <div className="flex justify-between">
-                        <p className="text-2xl uppercase lg:text-3xl">Alternativ</p>
-                          <p className="self-end flex-grow h-4 mx-1 opacity-50 dashed-line"></p>
-                          <p className="text-2xl lg:text-3xl">10</p>
                         </div>
                       </div>
                       <div className="text-xl capitalize"></div>
