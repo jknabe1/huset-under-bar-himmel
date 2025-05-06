@@ -40,7 +40,7 @@ export default function Header() {
           isHeaderVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col p-3 md:p-5 rounded-xl bg-white/80 backdrop-blur-sm">
+        <div className="flex flex-col p-3 md:p-5 rounded-xl">
           <div className="flex flex-row justify-between gap-4 items-center">
             <div className="flex flex-row justify-between w-full items-center">
                 <button
@@ -48,53 +48,12 @@ export default function Header() {
                 onClick={toggleMenu}
                 >
                 {isMenuOpen ? (
-                  <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="w-auto h-4 md:h-5"
-                  >
-                  <line
-                    x1="1"
-                    y1="1"
-                    x2="23"
-                    y2="23"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                  <line
-                    x1="23"
-                    y1="1"
-                    x2="1"
-                    y2="23"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                  </svg>
-                ) : (
-                  <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="42"
-                  height="16"
-                  viewBox="0 0 85 33"
-                  className="w-auto h-4 md:h-5"
-                  >
-                  <g transform="translate(-0.379 -0.395)">
-                    <rect
-                    width="85"
-                    height="11"
-                    transform="translate(0.378 0.395)"
-                    fill="currentColor"
-                    />
-                    <rect
-                    width="85"
-                    height="11"
-                    transform="translate(0.378 22.395)"
-                    fill="currentColor"
-                    />
-                  </g>
-                  </svg>
+                  <p>
+                  <span className="text-2xl md:text-3xl">STÄNG</span>
+                  </p>                ) : (
+                  <p>
+                  <span className="text-2xl md:text-3xl">ÖPPNA</span>
+                  </p>
                 )}
                 </button>
               <div className="flex justify-center">
