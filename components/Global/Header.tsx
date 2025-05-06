@@ -40,22 +40,23 @@ export default function Header() {
           isHeaderVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col p-3 md:p-5 rounded-xl">
+        <div className={`flex flex-col p-3 md:p-5 rounded-xl ${isMenuOpen ? "bg-white" : ""}`}>
           <div className="flex flex-row justify-between gap-4 items-center">
             <div className="flex flex-row justify-between w-full items-center">
-                <button
+              <button
                 className="px-4 py-2 text-base uppercase transition-opacity border-2 rounded-full md:text-xl md:py-3 md:px-8 hover:opacity-50 text-white border-black cursor-pointer bg-black"
                 onClick={toggleMenu}
-                >
+              >
                 {isMenuOpen ? (
                   <p>
-                  <span className="text-2xl md:text-3xl">STÄNG</span>
-                  </p>                ) : (
+                    <span className="text-2xl md:text-3xl">STÄNG</span>
+                  </p>
+                ) : (
                   <p>
-                  <span className="text-2xl md:text-3xl">ÖPPNA</span>
+                    <span className="text-2xl md:text-3xl">ÖPPNA</span>
                   </p>
                 )}
-                </button>
+              </button>
               <div className="flex justify-center">
                 <Link href="/" className="block transition-opacity shrink-0 hover:opacity-75">
                   <HusetLogoWithoutText width={250} height={80} color="#000000" />
@@ -72,17 +73,17 @@ export default function Header() {
             </div>
           </div>
           <div
-            className="flex flex-col h-0 gap-2 overflow-hidden text-white lg:flex lg:flex-row md:grid md:grid-cols-2"
+            className={`flex flex-col h-0 gap-2 overflow-hidden text-white lg:flex lg:flex-row md:grid md:grid-cols-2 ${isMenuOpen ? "p-4  rounded-b-xl" : ""}`}
             style={{
               marginTop: isMenuOpen ? "1rem" : "0rem",
               height: isMenuOpen ? "auto" : "0px",
-              transition: "height 0.3s ease-in-out, margin-top 0.3s ease-in-out",
+              transition: "height 0.3s ease-in-out, margin-top 0.3s ease-in-out, padding 0.3s ease-in-out",
             }}
           >
             <a
               href="/huset"
               target="_self"
-              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-darkgreen flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
+              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-black flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
             >
               {/* Grid Background */}
               <div className="absolute inset-0">
@@ -103,7 +104,7 @@ export default function Header() {
             <a
               href="/meny"
               target="_self"
-              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-darkgreen flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
+              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-black flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
             >
               {/* Grid Background */}
               <div className="absolute inset-0">
@@ -124,7 +125,7 @@ export default function Header() {
             <a
               href="/overvaningen"
               target="_self"
-              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-darkgreen flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
+              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-black flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
             >
               {/* Grid Background */}
               <div className="absolute inset-0">
@@ -143,7 +144,7 @@ export default function Header() {
             <a
               href="/kontakt"
               target="_self"
-              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-darkgreen flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
+              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-black flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
             >
               {/* Grid Background */}
               <div className="absolute inset-0">
@@ -165,7 +166,7 @@ export default function Header() {
             <a
               href="https://kexxkultur.com/under-bar-himmel/"
               target="blank"
-              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-darkgreen flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
+              className="lg:p-8 md:p-6 p-4 w-full bg-white border-2 border-black flex gap-8 lg:flex-col items-center rounded-[1rem] justify-center md:justify-between md:flex-row-reverse transition hover:bg-green relative overflow-hidden"
             >
               {/* Grid Background */}
               <div className="absolute inset-0">
