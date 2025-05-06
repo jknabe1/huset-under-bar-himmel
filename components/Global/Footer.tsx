@@ -59,7 +59,7 @@ export default function Footer() {
 
           {/* Logo - Centered vertically */}
           <div className="flex items-center justify-center">
-            <HusetLogo width={200} height={80} className="md:w-[300px] md:h-[120px]" />
+            <HusetLogo width={320} height={160} className="md:w-[300px] md:h-[120px]" />
           </div>
         </div>
 
