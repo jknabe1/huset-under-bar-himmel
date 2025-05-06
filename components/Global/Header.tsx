@@ -62,14 +62,20 @@ export default function Header() {
                   <HusetLogoWithoutText width={250} height={80} color="#000000" />
                 </Link>
               </div>
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                className="items-center hidden px-6 py-3 text-base text-center uppercase border-2 rounded-full lg:flex nav-button hover:text-white hover:bg-black md:px-8 md:py-3 md:text-xl"
-              >
-                Beställ
-              </a>
+              <button>
+                <p>
+                  <span className="text-2xl md:text-3xl">
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="items-center hidden px-6 py-3 text-center uppercase border-2 rounded-full lg:flex nav-button hover:text-white hover:bg-black md:px-8 md:py-3 text-2xl md:text-3xl"
+                    >
+                      Beställ
+                    </a>
+                  </span>
+                </p>
+              </button>
             </div>
           </div>
           <div
